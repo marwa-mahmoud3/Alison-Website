@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coursesf</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="HTMLCourse.css">
+        <script src="HTMLCourse.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-fixed-top">
+            <div class="container-fluid">
+             <h3 id="logohide"><i class="fab fa-leanpub m-3" ></i></h3>
+              <h3 id="heading"><i class="fab fa-leanpub m-3" id="logo"></i>Alison</h3>  
+              <form class="navbar-form navbar-left" action="/action_page.php" id="search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for Courses" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit" id="searchIcon">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+         
+              <div id="navbarSupportedContent">
+                  <a class="nav-link dropdown-toggle me-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course Categories</a>
+                  <div class="dropdown-menu" id="s">
+                    <div class="list-inline" id="firstdropdown">
+                      <a id="one"><h2><i class="fas fa-desktop"></i></h2>IT</a>
+                      <a id="two"><h2><i class="fas fa-language"></i></h2>Language</a>
+                      <a id="three"><h2><i class="fas fa-flask"></i></h2>Science</a>
+                      <a id="four"><h2><i class="fas fa-heartbeat"></i></i></h2>Health</a>
+                      <a id="five"><h2><i class="fas fa-user-alt"></i></h2>Humanities</a>
+                      <a id="six"><h2><i class="fas fa-calculator"></i></h2>Math</a>
+                      <a id="seven"><h2><i class="fas fa-bullhorn"></i></h2>Marketing</a>
+                      <a id="eight"><h2><i class="far fa-clock"></i></h2>LifeStyle</a>
+                      <a id="nine"><h2><i class="fas fa-border-all"></i></h2>All Categories</a>
+                    </div>
+                  </div>
+              </div>
+              <div id="navbarSupportedContent">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course Types</a>
+                <div class="dropdown-menu" id="s">
+                  <div class="list-inline" id="seconddropdown">
+                    <a id="one"><h2><i class="fas fa-scroll"></i></h2>Certificate Courses</a>
+                    <a id="two" ><h2><i class="fas fa-bookmark"></i></h2>Diploma Courses</a>
+                    <a id="three"><h2><i class="fas fa-arrow-right"></i></h2>Learning Path</a>    
+                  </div>
+                </div>
+              </div>
+              <div id="navbarSupportedContent">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course For Jobs</a>
+                <div class="dropdown-menu" id="s">
+                  <div class="list-inline" id="thirddropdown">
+                    <a id="one"><h2><i class="fas fa-briefcase"></i></h2>Get Career Skills and Guidance</a>
+                    <a id="two"><h2><i class="fas fa-desktop"></i></h2>Find Courses for Specific Jobs</a>
+                  </div>
+                </div>
+              </div>
+                <span class="nav-item" id="me">
+                    <i class="fas fa-user" style="color: white;font-size: 20px;margin-top: 10px;margin-left: 215px;"></i>
+                    <a class="nav-link dropdown-toggle" 
+                    style="margin-left: 200px;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Me</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width:10%;margin-left: 1100px;margin-top: 0px;height: 70px;">
+                        <a class="dropdown-item" href="#">View Profile</a>
+                        <a class="dropdown-item" href="HomePage.html">Log Out</a>
+                    </div>
+                </span> 
+                <span class="nav-item">
+                  <div class="badge" id="badge">en</div>
+                  <h4 ><a class="nav-link" href="#" ><i class="fas fa-globe" style="color: black;background-color: white;border-radius: 50%;
+                    width: 35px;height: 35px;padding: 9px;"></i></a></h4>
+                </span>   
+            </div>
+          </nav> 
+        <div class="container-fluid" id="course">
+            <div class="row">
+                <div class="col-3">
+                        <div id="onecourse">
+                            <a id="link1"><i class="far fa-play-circle"></i>HTML Introduction</a>
+                        </div>
+                        <div id="twocourse">
+                            <a id="link2"><i class="far fa-play-circle"></i>HTML What I need?</a>
+                        </div>
+                        <div id="threecourse">
+                            <a id="link3"><i class="far fa-play-circle"></i>HTML Attributes</a>
+                        </div>
+                        <div id="fourcourse">
+                            <a id="link4"><i class="far fa-play-circle"></i>HTML Heading</a>
+                        </div>
+                        <div id="fivecourse">
+                            <a id="link5"><i class="far fa-play-circle"></i>HTML Image</a>
+                        </div>
+                        <div id="sixcourse">
+                            <a id="link6"><i class="far fa-play-circle"></i>HTML Links</a>
+                        </div>
+                        <div id="sevencourse">
+                            <a id="link7"><i class="far fa-play-circle"></i>HTML Head</a>
+                        </div>
+                        <div id="eightcourse">
+                            <a id="link8"><i class="far fa-play-circle"></i>HTML Comments</a>
+                        </div>
+                        <div id="ninecourse">
+                            <a id="link9"><i class="far fa-play-circle"></i>HTML Display</a>
+                        </div>
+                        <div id="tencourse">
+                            <a id="link10"><i class="far fa-play-circle"></i>HTML Lists</a>
+                        </div>
+                        <div id="elevencourse">
+                            <a id="link11"><i class="far fa-play-circle"></i>HTML Text Format(Part1)</a>
+                        </div>
+                        <div id="twcourse">
+                            <a id="link12"><i class="far fa-play-circle"></i>HTML Text Format(Part2)</a>
+                        </div>
+                        <div id="thcourse">
+                            <a id="link13"><i class="far fa-play-circle"></i>HTML Text Format(Part3)</a>
+                        </div>
+                </div>
+                <div class="col-7">
+                    <div id="course1">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/PYjyg0LNTfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div >
+                             <button class="next" id="next1" style="margin-left: 790px;">Next &raquo;</button>
+                        </div>
+                    </div>
+                    <div id="course2">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/YBAhrf7Bz6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                       <div>
+                            <button class="prev" id="prev2">&laquo; Prev</button>
+                             <button class="next" id="next2">Next &raquo;</button>
+                         </div>
+                    </div>
+                    <div id="course3">
+                        <iframe  width="760" height="415" 
+                        src="https://www.youtube.com/embed/BCh2JCgrMp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div >
+                            <button class="prev" id="prev3">&laquo; Prev</button>
+                             <button class="next" id="next3">Next &raquo;</button>
+                        </div>
+                    </div>
+                   <div id="course4">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/Cc7ur4-7mJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div>
+                            <button class="prev" id="prev4">&laquo; Prev</button>
+                             <button class="next" id="next4">Next &raquo;</button>
+                        </div>
+                   </div>
+                   <div id="course5">
+                        <iframe  width="760" height="415" 
+                        src="https://www.youtube.com/embed/k2IdoJ3wfTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div >
+                            <button class="prev" id="prev5">&laquo; Prev</button>
+                             <button class="next" id="next5">Next &raquo;</button>
+                        </div>
+                   </div>
+                    <div id="course6">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/gn9a14Nn-QU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div>
+                            <button class="prev" id="prev6">&laquo; Prev</button>
+                            <button class="next" id="next6">Next &raquo;</button>
+                        </div>
+                    </div>
+                    <div id="course7">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/sdpYT2HyhdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div>
+                            <button class="prev" id="prev7">&laquo; Prev</button>
+                            <button class="next" id="next7">Next &raquo;</button>
+                        </div>
+                    </div>
+                    <div id="course8">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/oADG1SEXPxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div>
+                            <button class="prev" id="prev8">&laquo; Prev</button>
+                             <button class="next" id="next8">Next &raquo;</button>
+                        </div>
+                    </div>
+                    <div id="course9">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/4WnOExZKr3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div >
+                            <button class="prev" id="prev9">&laquo; Prev</button>
+                             <button class="next" id="next9">Next &raquo;</button>
+                        </div>
+                    </div>
+                     <div id="course10">
+                        <iframe  width="760" height="415" 
+                        src="https://www.youtube.com/embed/3gOR7PiMx1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div >
+                            <button class="prev" id="prev10">&laquo; Prev</button>
+                             <button class="next" id="next10">Next &raquo;</button>
+                        </div>
+                     </div> 
+                    <div id="course11">
+                        <iframe width="760" height="415" 
+                        src="https://www.youtube.com/embed/76AzS5nsWBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div>
+                            <button class="prev" id="prev11">&laquo; Prev</button>
+                             <button class="next" id="next11">Next &raquo;</button>
+                        </div>
+                    </div>
+                    <div id="course12">
+                        <iframe width="760" height="415" src="https://www.youtube.com/embed/WuzYyKkSPXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <button class="prev" id="prev12">&laquo; Prev</button>
+                             <button class="next" id="next12">Next &raquo;</button>
+                        </div>
+                    </div>
+                    <div id="course13">
+                        <iframe  width="760" height="415" 
+                        src="https://www.youtube.com/embed/A4ElKgkksY0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                        <div>
+                            <button class="prev" id="prev13" style="margin-left:90px;">&laquo; Prev</button>
+                        </div>
+                    </div>       
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

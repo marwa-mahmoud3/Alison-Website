@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<htm  lang="en">
+    <head>
+        <title>Alison</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="HomePage.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="HomePage.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head> 
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container-fluid">
+          <h3 id="logohide"><i class="fab fa-leanpub m-3" ></i></h3>
+          <h3 id="heading"><i class="fab fa-leanpub m-3" id="logo"></i>Alison</h3>  
+          <form class="navbar-form navbar-left" action="/action_page.php" id="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for Courses" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="searchIcon">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+     
+          <div id="navbarSupportedContent">
+              <a class="nav-link dropdown-toggle me-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course Categories</a>
+              <div class="dropdown-menu" id="s">
+                <div class="list-inline" id="firstdropdown">
+                  <a id="one"><h2><i class="fas fa-desktop"></i></h2>IT</a>
+                  <a id="two"><h2><i class="fas fa-language"></i></h2>Language</a>
+                  <a id="three"><h2><i class="fas fa-flask"></i></h2>Science</a>
+                  <a id="four"><h2><i class="fas fa-heartbeat"></i></i></h2>Health</a>
+                  <a id="five"><h2><i class="fas fa-user-alt"></i></h2>Humanities</a>
+                  <a id="six"><h2><i class="fas fa-calculator"></i></h2>Math</a>
+                  <a id="seven"><h2><i class="fas fa-bullhorn"></i></h2>Marketing</a>
+                  <a id="eight"><h2><i class="far fa-clock"></i></h2>LifeStyle</a>
+                  <a id="nine"><h2><i class="fas fa-border-all"></i></h2>All Categories</a>
+                </div>
+              </div>
+          </div>
+          <div id="navbarSupportedContent">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course Types</a>
+            <div class="dropdown-menu" id="s">
+              <div class="list-inline" id="seconddropdown">
+                <a id="one"><h2><i class="fas fa-scroll"></i></h2>Certificate Courses</a>
+                <a id="two" ><h2><i class="fas fa-bookmark"></i></h2>Diploma Courses</a>
+                <a id="three"><h2><i class="fas fa-arrow-right"></i></h2>Learning Path</a>    
+              </div>
+            </div>
+          </div>
+          <div id="navbarSupportedContent">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Course For Jobs</a>
+            <div class="dropdown-menu" id="s">
+              <div class="list-inline" id="thirddropdown">
+                <a id="one"><h2><i class="fas fa-briefcase"></i></h2>Get Career Skills and Guidance</a>
+                <a id="two"><h2><i class="fas fa-desktop"></i></h2>Find Courses for Specific Jobs</a>
+              </div>
+            </div>
+          </div>
+            <span class="nav-item" >
+              <button type="button" id="SignUp" class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static">Sign Up</button>
+            </span>
+            <span class="nav-item" >
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" id="LogIn">Log in</a>
+            </span> 
+            <span class="nav-item">
+              <div class="badge" id="badge">en</div>
+              <h4 ><a class="nav-link" href="#" ><i class="fas fa-globe" style="color: black;background-color: white;border-radius: 50%;
+                width: 35px;height: 35px;padding: 9px;"></i></a></h4>
+            </span>  
+            
+            <div class="modal" id="myModalone" role="dialog">
+              <div class="modal-dialog  modal-lg">          
+                <div class="modal-content">
+                  <div class="container-fluid" id="ModeloneHeader">  
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="button" class="close" data-dismiss="modal" >&times;</button> 
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-8">
+                        <h4>Sign up for free</h4>
+                        <p>Join the World's Largest Free Learning Community</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid" id="modelonebody">
+                    <div class="row justify-content-center">
+                      <div class="col-5">
+                        <label style="color: rgb(148, 142, 142);font-size: 12px;margin-top: 20px;font-family: Arial;text-align: center ;">This is the name that will appear on your Certificate</label><br>
+                      </div>
+                      <div class="row justify-content-center">
+                        <div class="col-7" style="margin-bottom: 10px;">
+                            <form id="register-form" action="">
+                                <input placeholder="First Name" type="text" id="firstname" value="" required="">
+                                
+                                <input placeholder="Last Name" type="text" id="lastname" value="" required=""> <br><br>
+                                
+                                <input placeholder="E-mail" type="email" id="em" value="" required=""><br><br>
+                                
+                                <input placeholder="password" type="password" id="uPw" value="" required=""><br><br>
+                                
+                                <input type="checkbox" style="margin-left: 10px;margin-right: 5px;" required="">
+                                
+                                <label style="color: rgb(148, 142, 142);font-size: 12px;font-family: Arial"> I agree to the</label>
+                                
+                                <a href="#" style="color: black;text-decoration: underline; font-size: 14px;">Terms and Conditions</a><br><br>
+                                
+                                <a id="signbutton" class="btn" style="margin-bottom: 10px;">Sign Up</a>
+                                
+                                <label style="color: black; font-size: 12px;margin-left: 20px;font-family: Arial;">Already have an Alison account?</label> 
+                                
+                                <a style="color: rgb(89, 167, 11); text-decoration: underline;cursor: pointer;" id="modelLog">Log in</a>
+                            </form>
+                        <div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+        </div>
+      </nav> 
+       
+      <div class="modal" id="myModal" role="dialog" >
+        <div class="modal-dialog  modal-lg" >          
+          <div class="modal-content">
+            <div class="container-fluid" id="ModeloneHeader">  
+              <div class="row">
+                <div class="col-12">
+                  <button type="button" class="close" data-dismiss="modal" style="font-size: 20px;">&times;</button> 
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <h4>Welcome Back!</h4>
+                  <p>What will you learn today? Find out,with Alison</p>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid" id="modelonebody">
+                <div class="row justify-content-center" style="margin-top: 70px;">
+                  <div class="col-7" style="margin-bottom: 40px;">  
+                    <form action="" method="GET">
+                       <input placeholder="E-mail" type="email" id="useremail" class="form-control" value="" required autofocus style="padding: 10px;"><br>
+                       
+                       <input placeholder="password" type="password" id="userPw" class="form-control" value="" style="padding: 10px;" required><br><br>
+                                   
+                       <a class="btn" style="margin-bottom: 10px;padding: 10px 180px;" id="logbutton">Log In</a>
+                       
+                       <label style="color: black; font-size: 12px;margin-left: 20px;font-family: Arial;">Don't have an Alison account?</label> 
+                       
+                       <a style="color: rgb(89, 167, 11); text-decoration: underline;cursor: pointer;" id="signmodal">Sign Up</a>
+                    </form>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="header">
+        <div class="row">
+        <div class="col-7" id="firstheader">
+            <br>
+            <h1> Empower Yourself</h1>
+            <p><span id="mark">Free online courses</span> from the world's leading experts.</p>
+            <p>Join 17 million learners today.</p>
+            <br><br>
+
+            <button id="headersign" class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static">Sign Up Now</button>
+        </div>
+        <div class="col-5" id="sideheader">
+          <br><br>
+          <div>
+            <a id="headerone"><h2><i class="fas fa-desktop"></i></h2>Technology</a>
+            <a id="headertwo"><h2><i class="fas fa-language"></i></h2>Language</a>
+            <a id="headerthree"><h2><i class="fas fa-flask"></i></h2>Science</a>
+          </div>
+          <div>
+            <a id="headerfour"><h2><i class="fas fa-heartbeat"></i></i></h2>Health</a>
+            <a id="headerfive"><h2><i class="fas fa-user-alt"></i></h2>Humanities</a>
+            <a id="headersix"><h2><i class="fas fa-calculator"></i></h2>Math</a>
+          </div>
+          <div>
+            <a id="headerseven"><h2><i class="fas fa-bullhorn"></i></h2>Marketing</a>
+            <a id="headereight"><h2><i class="far fa-clock"></i></h2>LifeStyle</a>
+            <a id="headernine"><h2><i class="fas fa-border-all"></i></h2>Bussines</a>
+          </div>
+        </div>
+      </div>
+      </div>
+ 
+      <div class="container-fluid" id="items">
+        <div class="row justify-content-center">
+          <div class="col-2" id="firstitem">
+            <a  id="firstlink">Trending Courses</a>
+          </div>
+          <div class="col-2" id="seconditem">
+            <a id="secondlink">Most Popular Courses</a>
+          </div>
+          <div class="col-2" id="thirditem">
+            <a id="thirdlink">Most Recent Courses</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-fluid trending" id="categories">
+        <div class="row justify-content-center">
+          <div class="col-2">
+             <div id="course">
+              <img src="https://www.ssdntech.com/blog/wp-content/uploads/2019/07/html-tutorial-for-beginners.png">
+                <p>
+                  <span>Certificate</span>
+                  <span>Learning Path</span>
+                </p>
+                <h3>HTML Tutorial for Beginners</h3><br>
+                <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start"><a>Start Now</a></button>
+              </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://wtmatter.com/wp-content/uploads/2020/07/Data-Structures.png">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Data Structure and Algorithms</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start7"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://corporate-adviser.com/wp-content/uploads/2015/08/Health-Mental-Brain-620x430.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:red">Health</span>
+              </p>
+              <h3>Diploma in Mental Health</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start6"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://tr2.cbsistatic.com/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:lightskyblue">Bussiness</span>
+              </p>
+              <h3>Diploma in Project Manegment</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start5"><a>Start Now</a></button>
+            </div>            
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.tgcindia.com/wp-content/uploads/2015/04/bootstrap1.gif">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Bootstrap 4</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start1"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://cdn01.alison-static.net/courses/1816/alison_courseware_intro_1816.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:purple">Math</span>
+              </p>
+              <h3>Algebra</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start2"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.vapulus.com/en/wp-content/uploads/2018/11/0_f-YBCfsCVkm9meEK.jpg">
+              <p>
+                <span style="background-color:lightskyblue">Bussines</span>
+                <span style="background-color:rgb(243, 12, 224)">Marketing</span>
+              </p>
+              <h3>Digital Marketing</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start3"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/hardware_software_and_operating_system.jpg">
+              <p>
+                <span>Certificate</span>
+                <span style="background-color:blue">Technology</span>
+              </p>
+              <h3>Operating System</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start4"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3 more">
+              <div id="more">
+                <button id="moreCourses"><a>More Courses</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid trending" id="most">
+        <div class="row justify-content-center">
+          <div class="col-2">
+             <div id="course">
+              <img src="https://www.ssdntech.com/blog/wp-content/uploads/2019/07/html-tutorial-for-beginners.png">
+                <p>
+                  <span>Certificate</span>
+                  <span>Learning Path</span>
+                </p>
+                <h3>HTML Tutorial for Beginners</h3><br>
+                <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start"><a>Start Now</a></button>
+              </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://wtmatter.com/wp-content/uploads/2020/07/Data-Structures.png">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Data Structure and Algorithms</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start7"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://corporate-adviser.com/wp-content/uploads/2015/08/Health-Mental-Brain-620x430.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:red">Health</span>
+              </p>
+              <h3>Diploma in Mental Health</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start6"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://tr2.cbsistatic.com/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:lightskyblue">Bussiness</span>
+              </p>
+              <h3>Diploma in Project Manegment</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start5"><a>Start Now</a></button>
+            </div>            
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.tgcindia.com/wp-content/uploads/2015/04/bootstrap1.gif">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Bootstrap 4</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start1"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://cdn01.alison-static.net/courses/1816/alison_courseware_intro_1816.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:purple">Math</span>
+              </p>
+              <h3>Algebra</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start2"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.vapulus.com/en/wp-content/uploads/2018/11/0_f-YBCfsCVkm9meEK.jpg">
+              <p>
+                <span style="background-color:lightskyblue">Bussines</span>
+                <span style="background-color:rgb(243, 12, 224)">Marketing</span>
+              </p>
+              <h3>Digital Marketing</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start3"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/hardware_software_and_operating_system.jpg">
+              <p>
+                <span>Certificate</span>
+                <span style="background-color:blue">Technology</span>
+              </p>
+              <h3>Operating System</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start4"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3 more">
+              <div id="more">
+                <button id="moreCourses"><a>More Courses</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid trending" id="mm">
+        <div class="row justify-content-center">
+          <div class="col-2">
+             <div id="course">
+              <img src="https://www.ssdntech.com/blog/wp-content/uploads/2019/07/html-tutorial-for-beginners.png">
+                <p>
+                  <span>Certificate</span>
+                  <span>Learning Path</span>
+                </p>
+                <h3>HTML Tutorial for Beginners</h3><br>
+                <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start"><a>Start Now</a></button>
+              </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://wtmatter.com/wp-content/uploads/2020/07/Data-Structures.png">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Data Structure and Algorithms</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start7"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://corporate-adviser.com/wp-content/uploads/2015/08/Health-Mental-Brain-620x430.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:red">Health</span>
+              </p>
+              <h3>Diploma in Mental Health</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start6"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://tr2.cbsistatic.com/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:lightskyblue">Bussiness</span>
+              </p>
+              <h3>Diploma in Project Manegment</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start5"><a>Start Now</a></button>
+            </div>            
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom: 90px;">
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.tgcindia.com/wp-content/uploads/2015/04/bootstrap1.gif">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Bootstrap 4</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start1"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://cdn01.alison-static.net/courses/1816/alison_courseware_intro_1816.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:purple">Math</span>
+              </p>
+              <h3>Algebra</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start2"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.vapulus.com/en/wp-content/uploads/2018/11/0_f-YBCfsCVkm9meEK.jpg">
+              <p>
+                <span style="background-color:lightskyblue">Bussines</span>
+                <span style="background-color:rgb(243, 12, 224)">Marketing</span>
+              </p>
+              <h3>Digital Marketing</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start3"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/hardware_software_and_operating_system.jpg">
+              <p>
+                <span>Certificate</span>
+                <span style="background-color:blue">Technology</span>
+              </p>
+              <h3>Operating System</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start4"><a>Start Now</a></button>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid trending" id="recent">
+        <div class="row justify-content-center">
+          <div class="col-2">
+             <div id="course">
+              <img src="https://www.ssdntech.com/blog/wp-content/uploads/2019/07/html-tutorial-for-beginners.png">
+                <p>
+                  <span>Certificate</span>
+                  <span>Learning Path</span>
+                </p>
+                <h3>HTML Tutorial for Beginners</h3><br>
+                <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start"><a>Start Now</a></button>
+              </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://wtmatter.com/wp-content/uploads/2020/07/Data-Structures.png">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Data Structure and Algorithms</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start7"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://corporate-adviser.com/wp-content/uploads/2015/08/Health-Mental-Brain-620x430.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:red">Health</span>
+              </p>
+              <h3>Diploma in Mental Health</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start6"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://tr2.cbsistatic.com/hub/i/r/2018/03/20/cad44d4d-6707-4703-9eeb-30d539d16a6e/resize/1200x/1be69d3ae9b7c4be604bd2d8058ed960/istock-844535646.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:lightskyblue">Bussiness</span>
+              </p>
+              <h3>Diploma in Project Manegment</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start5"><a>Start Now</a></button>
+            </div>            
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.tgcindia.com/wp-content/uploads/2015/04/bootstrap1.gif">
+              <p>
+                <span>Certificate</span>
+                <span>Learning Path</span>
+              </p>
+              <h3>Bootstrap 4</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start1"><a>Start Now</a></button>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://cdn01.alison-static.net/courses/1816/alison_courseware_intro_1816.jpg">
+              <p>
+                <span style="background-color:orange">Diploma</span>
+                <span style="background-color:purple">Math</span>
+              </p>
+              <h3>Algebra</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start2"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.vapulus.com/en/wp-content/uploads/2018/11/0_f-YBCfsCVkm9meEK.jpg">
+              <p>
+                <span style="background-color:lightskyblue">Bussines</span>
+                <span style="background-color:rgb(243, 12, 224)">Marketing</span>
+              </p>
+              <h3>Digital Marketing</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start3"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="col-2">
+            <div id="course">
+              <img src="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/hardware_software_and_operating_system.jpg">
+              <p>
+                <span>Certificate</span>
+                <span style="background-color:blue">Technology</span>
+              </p>
+              <h3>Operating System</h3><br>
+              <button class="btn btn-info" data-toggle="modal" data-target="#myModalone" data-backdrop="static" id="start4"><a>Start Now</a></button>
+            </div>            
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-3 more">
+              <div id="more">
+                <button id="moreCourses"><a>More Courses</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row justify-content-center" id="statistics">
+          <div class="col-2">
+              <div>
+                <i class="fas fa-users" style="font-size: 35px;font-weight: bold;"></i>
+                <p style="font-size: 40px;font-weight: bold;">17 </p>
+                <p style="line-height: 0%;">Million Learners</p>
+              </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <i class="fas fa-user-graduate" style="font-size: 35px;font-weight: bold;"></i>
+              <p style="font-size: 40px;font-weight: bold;">3.0 </p>
+              <p style="line-height: 0%;">Million Graduates</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <i class="fas fa-book-open" style="font-size: 35px;font-weight: bold;"></i>
+              <p style="font-size: 40px;font-weight: bold;">2,000+</p>
+              <p style="line-height: 0%;">Courses</p>
+            </div>
+          </div>
+          <div class="col-2">
+            <div>
+              <i class="fas fa-globe" style="font-size: 35px;font-weight: bold;"></i>
+              <p style="font-size: 40px;font-weight: bold;">195</p>
+              <p style="line-height: 0%;">Countries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" >
+        <div class="row">
+          <div class="col-3" style="padding-left:0px;position: absolute;margin-top: 220px;">
+            <svg width="380" height="210" version="1.1" xmlns="http://www.w3.org/2000/svg" id="firstsvg" >
+              <defs>
+                  <linearGradient id="Gradient1" gradientTransform="rotate(70)">
+                    <stop stop-color="green" offset="10%"/>
+                    <stop stop-color="rgb(181, 241, 16)" offset="90%"/>
+                  </linearGradient>
+              </defs>
+              <rect rx="50" ry="50" width="310" height="190" fill="url(#Gradient1)"/>            
+            </svg>
+          </div> 
+        </div>
+      </div>
+      <div class="container-fluid" id="opinions" >
+        <div class="row justify-content-center">      
+          <div class="col-2 " id="slider1" style="margin-top: 70px;padding-bottom: 40px;">
+            <div id="myCarousel" class="carousel" data-ride="carousel">
+              <div class="carousel-inner" >
+                <div class="item active">
+                  <img src="1.PNG">
+                </div>
+                <div class="item">
+                  <img src="2.PNG">               
+                </div>
+                <div class="item">
+                  <img src="3.PNG">                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 offset-1"  id="slider2" style="padding-bottom: 40px;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+              <ol class="carousel-indicators" id="indicators"  style="margin-bottom: 270px;">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              
+                <div class="carousel-inner" style="margin-top: 120px;">
+                  <div class="item active">
+                    <div><i class="fas fa-quote-right"></i></div>
+                    <span> "Alison helped me to advanced my proffesional learning. for anyone out there thinking about studing 
+                      online ,Alison Provieds a great avenu for selfgrowth , take adventature of it! just Keep yourself busy doing that will upgrade
+                      your knowledge. Every time an opportunity to learn comes your way, always grab it. Alison has Certainly been worth my time"
+                    </span>
+                  </div>
+              
+                  <div class="item">
+                    <div><i class="fas fa-quote-right"></i></div>
+                    <span> "Alison helped me to advanced my proffesional learning. for anyone out there thinking about studing 
+                      online ,Alison Provieds a great avenu for selfgrowth , take adventature of it! just Keep yourself busy doing that will upgrade
+                      your knowledge. Every time an opportunity to learn comes your way, always grab it. Alison has Certainly been worth my time"
+                    </span>                
+                  </div>
+              
+                  <div class="item">
+                    <div><i class="fas fa-quote-right"></i></div>
+                    <span> "Alison helped me to advanced my proffesional learning. for anyone out there thinking about studing 
+                      online ,Alison Provieds a great avenu for selfgrowth , take adventature of it! just Keep yourself busy doing that will upgrade
+                      your knowledge. Every time an opportunity to learn comes your way, always grab it. Alison has Certainly been worth my time"
+                    </span>                
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      
+      
+      <div class="container-fluid" id="beforefooter">
+        <div class="row justify-content-center" id="beforeFooter">
+          <div class="col-10" >
+             <p>So why wait? Start one of our 2,000 high quality courses from the world's leading experts today! </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <button id="headersign">Start Learning Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-fluid" id="Footer">
+        <div class="row justify-content-center" id="final">
+          <div class="col-2 ">
+              <h4><a>About Alison</a></h4>
+              <p><a href="#">Our Story</a></p>
+              <p><a href="#">Open Position</a></p>
+              <p><a href="#">Alison Programmes</a></p>
+              <p><a href="#">Empower Us</a></p>
+              <p><a href="#">How Alison Works</a></p>
+              <p><a href="#">Blog</a></p>
+          </div>
+          <div class="col-2">
+              <h4><a>Learning</a></h4>
+              <p><a href="#">Get the App</a></p>
+              <p><a href="#">About Alison Courses</a></p>
+              <p><a href="#">Alison Testimonials</a></p>
+              <p><a href="#">Accredition</a></p>
+              <p><a href="#">Premmium Learning </a></p>
+              <p><a href="#">Refer a Friend </a></p>
+              <p><a href="#">Pricing</a></p>        
+          </div>
+          <div class="col-2">
+              <h4><a>More</a></h4>
+              <p><a href="#">Publish on Alison</a></p>
+              <p><a href="#">Alison for Business</a></p>
+              <p><a href="#">Graduate Outcomes</a></p>
+              <p><a href="#">Psychometrics</a></p>
+              <p><a href="#">New & Press</a></p>
+              <p><a href="#">Index</a></p>            
+          </div>
+          <div class="col-2" id="contact">
+              <h4><a>Contact</a></h4>
+              <p><i class="far fa-question-circle"></i><a href="#">FAQ</a></p> 
+              <p><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></p> 
+              <p><i class="fab fa-twitter"></i><a href="#">Twitter</a></p>
+              <p><i class="fab fa-linkedin-in"></i><a href="#">LinkedIn</a></p>
+              <p><i class="fab fa-instagram"></i><a href="#">Instagram</a></p>
+              <p><i class="far fa-envelope"></i><a href="#">Customer Support</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="up">
+        <div class="row">
+          <div class="col-3">
+            <span style="color: white;"><i class="fab fa-leanpub m-3" id="logo" style="color: orange;"></i>Alison</span>
+              <span>@Alison 2021</span>           
+          </div>
+          <div class="col-5">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">sitemap</a>
+          </div>
+          <div id="logoup"> 
+            <a href="#"><i class="fas fa-arrow-circle-up" style="font-size: 40px;color: white;margin-left: 1190px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid fixed-bottom" style="margin-bottom: 60px;">
+        <div class="row align-items-md-end">
+          <div class="col-2 offset-11">
+            <i class="fas fa-sms" style="color:green;font-size: 40px;"></i>
+          </div>
+        </div>
+      </div>
+    </body>
+</htm>
