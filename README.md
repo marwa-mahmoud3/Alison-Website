@@ -1,4 +1,4 @@
-# Online-Courses-Website
+# Online Courses Website
 ![1](https://user-images.githubusercontent.com/58340861/123694069-22a72380-d859-11eb-8ea0-19d8ceb756cf.PNG)
 ![2](https://user-images.githubusercontent.com/58340861/123694013-0efbbd00-d859-11eb-9cdc-a6a6f3b1c62f.PNG)
 ![3](https://user-images.githubusercontent.com/58340861/123693580-867d1c80-d858-11eb-96f2-77273b643ac5.PNG)![1](https://user-images.githubusercontent.com/58340861/123694010-0c996300-d859-11eb-9f18-5f0789e6506c.PNG)
