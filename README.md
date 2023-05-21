@@ -3,7 +3,7 @@ I Create this project in the period ITI scholarship by used HTML, JQuery, and Ja
 
 ![1](https://user-images.githubusercontent.com/58340861/123694069-22a72380-d859-11eb-8ea0-19d8ceb756cf.PNG)
 ![2](https://user-images.githubusercontent.com/58340861/123694013-0efbbd00-d859-11eb-9cdc-a6a6f3b1c62f.PNG)
-![3](https://user-images.githubusercontent.com/58340861/123693580-867d1c80-d858-11eb-96f2-77273b643ac5.PNG)![1](https://user-images.githubusercontent.com/58340861/123694010-0c996300-d859-11eb-9f18-5f0789e6506c.PNG)
+![3](https://user-images.githubusercontent.com/58340861/123693580-867d1c80-d858-11eb-96f2-77273b643ac5.PNG)
 ![4](https://user-images.githubusercontent.com/58340861/123693641-998fec80-d858-11eb-9e93-9f3424fbf325.PNG)
 ![5](https://user-images.githubusercontent.com/58340861/123693671-a44a8180-d858-11eb-98e8-d34551368cc9.PNG)
 ![6](https://user-images.githubusercontent.com/58340861/123693709-af051680-d858-11eb-8f95-98f496470567.PNG)
